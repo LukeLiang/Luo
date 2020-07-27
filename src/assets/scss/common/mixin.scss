@@ -1,0 +1,10 @@
+/*
+  默认布局样式， 以便调用
+*/
+@mixin flex($fd: row, $jc: center, $ai: center) {
+  display:flex;
+  flex-direction: $fd;
+  justify-content: $jc;
+  align-items: $ai;
+}
+

@@ -1,0 +1,35 @@
+@import './../common/mixin.scss';
+@import './../common/public.scss';
+
+.container {
+    @include flex(row, space-around, center);
+    background-color: $colorNavigationBackground;
+    // opacity: 0.9;
+    color: #FFFFFF;
+    height: 100px;
+    .left {
+      @include flex();
+      cursor: pointer;
+      .title {
+        font-size: 30px;
+      }
+    }
+    .emp {
+      width: 100px;
+    }
+    .right {
+      display: flex;
+      align-items: center;
+      .tag {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 120px;
+        height: 100px;
+        cursor: pointer;
+        &:hover {
+          background-color: $colorTheme;
+        }
+      }
+    }
+  }
